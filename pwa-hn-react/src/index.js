@@ -13,11 +13,12 @@ import App from './components/News';
 import Newest from './components/Newest';
 import Show from './components/Show';
 import Ask from './components/Ask';
+import Jobs from './components/Jobs';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 const defaultChannelList = [
-  'news', 'newest'
+  'news', 'newest', 'show', 'ask', 'jobs'
 ];
 
 const changeChannel = (event) => {
@@ -59,6 +60,7 @@ ReactDOM.render(
             <li className="channel"><Link to="/newest/1" onClick={(event) => changeChannel(event)}>NEW</Link></li>
             <li className="channel"><Link to="/show/1" onClick={(event) => changeChannel(event)}>SHOW</Link></li>
             <li className="channel"><Link to="/ask/1" onClick={(event) => changeChannel(event)}>ASK</Link></li>
+            <li className="channel"><Link to="/jobs/1" onClick={(event) => changeChannel(event)}>JOBS</Link></li>
           </ul>
         </div>
         <Route exact path="/" component={Default} />
@@ -66,6 +68,7 @@ ReactDOM.render(
         <Route exact path="/newest/:page" component={Newest} />
         <Route exact path="/show/:page" component={Show} />
         <Route exact path="/ask/:page" component={Ask} />
+        <Route exact path="/jobs/:page" component={Jobs} />
       </div>
       </Router>
   </Provider>
