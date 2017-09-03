@@ -12,6 +12,7 @@ import Default from './components/Default';
 import App from './components/News';
 import Newest from './components/Newest';
 import Show from './components/Show';
+import Ask from './components/Ask';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
@@ -57,12 +58,14 @@ ReactDOM.render(
             <li className="channel"><Link to="/1" onClick={(event) => changeChannel(event)}>NEWS</Link></li>
             <li className="channel"><Link to="/newest/1" onClick={(event) => changeChannel(event)}>NEW</Link></li>
             <li className="channel"><Link to="/show/1" onClick={(event) => changeChannel(event)}>SHOW</Link></li>
+            <li className="channel"><Link to="/ask/1" onClick={(event) => changeChannel(event)}>ASK</Link></li>
           </ul>
         </div>
         <Route exact path="/" component={Default} />
         <Route exact path="/:page" component={App} />
         <Route exact path="/newest/:page" component={Newest} />
         <Route exact path="/show/:page" component={Show} />
+        <Route exact path="/ask/:page" component={Ask} />
       </div>
       </Router>
   </Provider>
