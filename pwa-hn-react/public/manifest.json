@@ -1,10 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PWA REACTCUTE",
+  "name": "PWA ReactCute",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
