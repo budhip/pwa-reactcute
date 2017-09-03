@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import hnReducer from './hnReducer';
+import detailcomment from './detailcomment';
 
 const rootReducer = combineReducers({
-  hnReducer
+  hnReducer,
+  detailcomment
 });
 
 export default rootReducer;

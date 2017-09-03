@@ -14,6 +14,7 @@ import Newest from './components/Newest';
 import Show from './components/Show';
 import Ask from './components/Ask';
 import Jobs from './components/Jobs';
+import DetailComment from './components/DetailComment';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
@@ -69,6 +70,7 @@ ReactDOM.render(
         <Route exact path="/show/:page" component={Show} />
         <Route exact path="/ask/:page" component={Ask} />
         <Route exact path="/jobs/:page" component={Jobs} />
+        <Route exact path="/item/:id" component={DetailComment} />
       </div>
       </Router>
   </Provider>
