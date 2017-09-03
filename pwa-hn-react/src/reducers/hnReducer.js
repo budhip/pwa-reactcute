@@ -1,4 +1,4 @@
-import { NEWS_LIST, NEWEST_LIST } from '../const';
+import { NEWS_LIST, NEWEST_LIST, SHOW_LIST } from '../const';
 
 const initState = {
   news: []
@@ -15,6 +15,11 @@ export default (state = initState, action) => {
       return {
         ...state,
         newest: action.data,
+      };
+    case SHOW_LIST:
+      return {
+        ...state,
+        show: action.data,
       };
     default:
       return state;
