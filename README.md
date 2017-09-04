@@ -3,8 +3,6 @@ Progressive Web Apps ReactCute
 
 ## Folder Structure
 
-After creation, your project should look like this:
-
 ```
 pwa-reactcute
 ├── README.md
