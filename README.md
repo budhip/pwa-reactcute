@@ -7,46 +7,47 @@ After creation, your project should look like this:
 
 ```
 pwa-reactcute
-  README.md
-  pwa-hn-react/
-    README.md
-    node_modules/
-    firebase.json
-    package.json
-    public/
-      512x512.png
-      favicon.ico
-      index.html
-      manifest.json
-    src/
-      actions/
-        index.js
-      components/
-        Ask.js
-        Comment.js
-        CommentItem.js
-        Container.js
-        Default.js
-        DetailComment.js
-        Item.js
-        Jobs.js
-        Newest.js
-        News.js
-        Show.js
-      const/
-        index.js
-      public/
-        loading.js
-      reducers/
-        detailcomment.js
-        hnReducer.js
-        index.js
-      store/
-        index.js
-      index.css
-      index.js
-      logo.svg
-      registerServiceWorker.js
+├── README.md
+└── pwa-hn-react
+    ├── node_modules/
+    ├── public
+    │    ├── 512x512.png
+    │    ├── favicon.ico
+    │    ├── index.html
+    │    └── manifest.json
+    ├── src
+    │   ├── actions
+    │   │   └── index.js
+    │   ├── components
+    │   │   ├── Ask.js
+    │   │   ├── Comment.js
+    │   │   ├── CommentItem.js
+    │   │   ├── Container.js
+    │   │   ├── Default.js
+    │   │   ├── DetailComment.js
+    │   │   ├── Item.js
+    │   │   ├── Jobs.js
+    │   │   ├── Newest.js
+    │   │   ├── News.js
+    │   │   └── Show.js
+    │   ├── const
+    │   │   └── index.js
+    │   ├── public
+    │   │   └── loading.js
+    │   ├── reducers
+    │   │   ├── detailcomment.js
+    │   │   ├── hnReducer.js
+    │   │   └── index.js
+    │   ├── store
+    │   │   └── index.js
+    │   ├── index.css
+    │   ├── index.js
+    │   ├── logo.svg
+    │   └── registerServiceWorker.js
+    ├── .firebaserc
+    ├── firebase.json
+    ├── package.json
+    └── README.md  
 ```
 
 ## How To use
